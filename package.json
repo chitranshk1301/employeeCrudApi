@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/chitranshk1301/userCrudApi/issues"
   },
-  "homepage": "https://github.com/chitranshk1301/userCrudApi#readme"
+  "homepage": "https://github.com/chitranshk1301/userCrudApi#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
 }
