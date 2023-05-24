@@ -17,9 +17,9 @@ CREATE TABLE employee (
   primary_emergency_contact VARCHAR(100) NOT NULL,
   primary_emergency_contact_no VARCHAR(100) NOT NULL,
   primary_relationship VARCHAR(100) NOT NULL,
-  secondary_relationship VARCHAR(100) NOT NULL,
-  secondary_emergency_contact VARCHAR(100) NOT NULL,
-  secondary_emergency_contact_no VARCHAR(100) NOT NULL,
+  secondary_relationship VARCHAR(100) DEFAULT NULL,
+  secondary_emergency_contact VARCHAR(100) DEFAULT NULL,
+  secondary_emergency_contact_no VARCHAR(100) DEFAULT NULL,
   password VARCHAR(100) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
