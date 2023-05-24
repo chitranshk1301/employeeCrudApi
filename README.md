@@ -52,15 +52,15 @@ Before making requests, make sure to start the server and have a MySQL database 
 ## Endpoints
 
 <ul>
-<li>**POST /employees/:page/:limit :** Create a new employee with multiple contact details. Request body should include employee data and contact details.</li>
+<li> **POST /employees/:page/:limit** Create a new employee with multiple contact details. Request body should include employee data and contact details.</li>
 
-<li>**GET /employees:** List employees with pagination support. Query parameters page and limit can be used to control the result set.</li>
+<li> **GET /employees** List employees with pagination support. Query parameters page and limit can be used to control the result set.</li>
 
-<li>**GET /employees/{id}:** Get details of a specific employee by ID.</li>
+<li> **GET /employees/{id}** Get details of a specific employee by ID.</li>
 
-<li>**PUT /employees/{id}:** Update an existing employee by ID. Request body should include the updated employee data.</li>
+<li> **PUT /employees/{id}** Update an existing employee by ID. Request body should include the updated employee data.</li>
 
-<li>**DELETE /employees/{id}:** Delete an employee by ID.</li>
+<li> **DELETE /employees/{id}** Delete an employee by ID.</li>
 </ul>
 
 **Note:** 
