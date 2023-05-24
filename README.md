@@ -23,7 +23,7 @@ The Employee API is a RESTful web service that provides CRUD operations for mana
 
    ```bash
    git clone git@github.com:chitranshk1301/employeeCrudApi.git
-   cd employeeCridApi
+   cd employeeCrudApi
 
 2. Install the dependencies:
 
