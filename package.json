@@ -2,7 +2,6 @@
   "name": "infoware_assignment",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,8 +18,11 @@
   },
   "homepage": "https://github.com/chitranshk1301/userCrudApi#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mysql": "^2.18.1"
+    "morgan": "^1.10.0",
+    "mysql2": "^3.3.2",
+    "nodemon": "^2.0.22"
   }
 }
