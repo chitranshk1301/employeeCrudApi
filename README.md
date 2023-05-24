@@ -31,7 +31,8 @@ The Employee API is a RESTful web service that provides CRUD operations for mana
    npm install
 
 3. Enter environment variables:
-   Create `.env` file and add environment variables.
+    
+    Create `.env` file and add environment variables.
    
 5. Set up the database:
 
