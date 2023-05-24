@@ -17,7 +17,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/employees', (req, res) => {
-    database.query('SELECT * FROM employee', (err, rows) => {
+    const page = req.query.page || 1; // Default to the first page if not provided
+    const limit = req.query.limit || 10; // Default limit to 10 records per page if not provided
+  
+    const offset = (page - 1) * limit;
+    database.query(`SELECT * FROM employee LIMIT ${limit} OFFSET ${offset}`, (err, rows) => {
         if (err) {
             console.error('Error connecting to MySQL:', err);
             return;
@@ -27,7 +31,7 @@ app.get('/api/employees', (req, res) => {
 })
 
 app.get('/api/employee/:id', (req, res) => {
-    database.query('SELECT * FROM employee WHERE id = ?', [req.params.id], (err, rows) => {
+    database.query(`ELECT * FROM employee WHERE id = ?`, [req.params.id], (err, rows) => {
         if (err) {
             console.error('Error connecting to MySQL:', err);
             return;
