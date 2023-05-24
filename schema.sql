@@ -5,7 +5,7 @@ CREATE DATABASE infoware;
 USE infoware;
 
 -- Create a table for users
-CREATE TABLE users (
+CREATE TABLE employee (
   id INT AUTO_INCREMENT PRIMARY KEY,
   full_name VARCHAR(50) NOT NULL,
   job_title VARCHAR(100) NOT NULL,
