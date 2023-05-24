@@ -30,8 +30,10 @@ The Employee API is a RESTful web service that provides CRUD operations for mana
    ```bash
    npm install
 
-3. Enter environment variables
-4. Set up the database:
+3. Enter environment variables:
+   Create `.env` file and add environment variables.
+   
+5. Set up the database:
 
     Make sure you have a MySQL database server running.
     Update the database configuration in db.js to match your MySQL server settings.
