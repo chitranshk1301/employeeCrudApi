@@ -16,9 +16,9 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.get('/api/employees', (req, res) => {
-    const page = req.query.page || 1; // Default to the first page if not provided
-    const limit = req.query.limit || 10; // Default limit to 10 records per page if not provided
+app.get('/api/employees/:page/:limit', (req, res) => {
+    const page = req.query.page || req.params.page;
+    const limit = req.query.limit || req.params.limit;
   
     const offset = (page - 1) * limit;
     database.query(`SELECT * FROM employee LIMIT ${limit} OFFSET ${offset}`, (err, rows) => {
