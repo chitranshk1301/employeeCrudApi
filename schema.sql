@@ -1,8 +1,8 @@
 -- Create a new database
-CREATE DATABASE infoware;
+CREATE DATABASE employees;
 
 -- Use the newly created database
-USE infoware;
+USE employees;
 
 -- Create a table for users
 CREATE TABLE employee (

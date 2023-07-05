@@ -31,7 +31,7 @@ app.get('/api/employees/:page/:limit', (req, res) => {
 })
 
 app.get('/api/employee/:id', (req, res) => {
-    database.query(`ELECT * FROM employee WHERE id = ?`, [req.params.id], (err, rows) => {
+    database.query(`SELECT * FROM employee WHERE id = ?`, [req.params.id], (err, rows) => {
         if (err) {
             console.error('Error connecting to MySQL:', err);
             return;
